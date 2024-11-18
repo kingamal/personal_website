@@ -4,7 +4,11 @@ app=Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Website content goes here!"
+    return "Homepage here!"
+
+@app.route('/about')
+def about():
+    return "About content is here!"
 
 if __name__=='__main__':
     app.run(debug=True)
